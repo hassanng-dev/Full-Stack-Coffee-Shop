@@ -1,0 +1,48 @@
+<%- include('partials/header') -%>
+<div class="container">
+  <div class="row mt-5">
+      <div class="col-6">
+          <div>
+            <a href="/logout" class="col-3 btn btn-primary button logOutButton">Logout</a>
+          </div>
+            <h3 class="profileH3">Pending Orders</h3>
+            <div class="orderContainer">
+              <ul>
+                <% for (let i = 0; i < pending.length; i++) { %>
+                <li>
+                  <%= pending[i].name %>'s <%= pending[i].temp %> <%= pending[i].size %> <%= pending[i].coffee %>
+                </li>
+                <form action="/post/completed/<%= pending[i].id %>?_method=PUT" method="POST" class="col-3">
+                  <button class="btn btn-primary fa fa-check button" type="submit"></button>
+                </form>
+                <% } %> 
+              </ul>
+            </div>
+            
+            
+              <h3 class="profileH3">Completed Orders</h3>
+              <div class="orderContainer">
+              <ul>
+                <% for (let i = 0; i < completed.length; i++) { %>
+                <li><%= completed[i].name %></li>
+                <li><%= completed[i].size %></li>
+                <li><%= completed[i].coffee %></li>
+                <li><%= completed[i].temp %></li>
+                <li><%= completed[i].barista %></li>
+                <form action="/post/deletePost/<%= completed[i].id %>?_method=DELETE" method="POST" class="col-3">
+                 <button class="btn btn-primary fa fa-trash button" type="submit"></button>
+                </form>
+                <% } %>
+              </ul>
+            </div>
+            
+          
+            
+      
+      </div>
+   </div>
+      
+</div>
+  
+</div>
+<%- include('partials/footer') -%>

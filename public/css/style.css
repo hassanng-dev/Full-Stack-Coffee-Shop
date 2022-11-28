@@ -1,0 +1,112 @@
+body {
+  background-color: rgb(239,222,205);
+  
+}
+
+.bg-image {
+  background-image: url(/imgs/coffee3.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+}
+
+.loginButton {
+  margin-top: 2%;
+  
+}
+
+header a{
+  text-decoration: none;
+  color: black;
+}
+
+header span {
+  color:black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.formContainer {
+  margin-left: 30%;
+  border: 2px solid black;
+  margin-top: 1%;
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  
+}
+
+.formContainer div {
+  margin-top: 2%;
+}
+
+.orderForm {
+  text-align: center;
+  margin-top: 1%;
+  
+}
+
+.orderForm h3 {
+  color: white;
+}
+
+.orderForm label {
+  color: white;
+}
+
+
+.orderButton {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.button {
+  background-color: rgb(111,78,55);
+  border: 2px solid rgb(111,78,55);
+}
+
+
+/* LOGIN PAGE */
+
+.signUpButton {
+  width: 16%;
+  margin-left: 4%;
+}
+
+/* LOGIN PAGE */
+
+
+/* SIGN UP */
+
+#emailHelp {
+  color: red;
+  font-weight: bolder;
+}
+
+.signUpForm label {
+  color: white;
+}
+
+
+/* SIGN UP */
+
+
+/* PROFILE */
+
+.profileH3 {
+  color: white;
+  
+}
+
+.logOutButton {
+  margin-left: 88%;
+  margin-right: auto; 
+}
+
+.orderContainer li {
+  color: white;
+}
+
+
+
+/* PROFILE */

@@ -1,0 +1,68 @@
+<%- include('partials/header') -%>
+<body class="bg-image">
+  
+
+  <main class="container">
+
+      <div class="row justify-content-around mt-5">
+        <a href="/login" class="col-3 btn btn-primary button"> Employee Login</a>
+          <!-- <a href="/login" class="col-3 btn btn-primary"> Employee Login</a> -->
+          <!-- <a href="/signup" class="col-3 btn btn-primary"> Signup</a> -->
+      </div>
+  </main>
+
+
+  <form action="/post/createPost" class="formContainer" method="POST">
+      <div class="orderForm">
+        
+        <div class="name">
+          <h3>Customer's Name</h3>
+          <input type="text" id="name" placeholder="Name" name="name">  
+        </div>
+
+        <div>
+          <h3>Size</h3>
+          <input type="radio" name="size" value="Large">
+          <label for="Large">Large</label>
+        
+          <input type="radio" name="size" value="Medium">
+          <label for="Medium">Medium</label>
+        
+          <input type="radio" name="size" value="Small">
+          <label for="Small">Small</label>
+        </div>
+
+        <div>
+          <h3>Coffee Flavors</h3>
+          <input type="radio" name="coffee" value="Caramel">
+          <label for="Caramel">Caramel</label>
+
+          <input type="radio" name="coffee" value="French Vanilla">
+          <label for="French Vanilla">French Vanilla</label>
+          
+          <input type="radio" name="coffee" value="Coconut">
+          <label for="Coconut">Coconut</label>
+          
+          <input type="radio" name="coffee" value="Pumpkin Spice">
+          <label for="Pumpkin Spice">Pumpkin Spice</label>
+        </div>
+
+        <div>
+          <h3>Hot or Ice</h3>
+          <input type="radio" name="temp" value="Ice">
+          <label for="ice">Ice</label>
+          <input type="radio" name="temp" value="Hot">
+          <label for="Hot">Hot</label>
+        </div>
+
+        <div>
+          <button class="col-3 btn btn-primary orderButton button" type="submit">Submit Order</button>
+        </div>
+      </div>
+
+  </form>
+
+</body>
+    
+
+<%- include('partials/footer') -%>
